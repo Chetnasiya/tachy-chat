@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tachy | Chat Application</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="app-header">
+            <h1>Tachy</h1>
+            <p class="tagline">Fast. Simple. Secure.</p>
+        </header>
+
+        <main class="chat-container">
+            <div class="messages">
+
+                <div class="message received">
+                    <p>Hello! Welcome to Tachy 👋</p>
+                </div>
+
+                <div class="message sent">
+                    <p>Hi! This UI looks clean.</p>
+                </div>
+
+                <div class="message received">
+                    <p>We will improve it step by step.</p>
+                </div>
+
+            </div>
+
+
+            <form class="message-input" id="messageForm">
+                <input type="text" id="messageInput" placeholder="Type your message..." aria-label="Type your message" autocomplete="off" />
+                <button type="submit" id="sendBtn">Send</button>
+            </form>
+        </main>
+
+    </div>
+
+    <script src="/js/chat.js" defer></script>
+</body>
+
+</html>
