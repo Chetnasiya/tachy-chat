@@ -18,27 +18,18 @@
     <div class="app-container">
 
         <header class="app-header">
-            <h1>Tachy</h1>
-            <p class="tagline">Fast. Simple. Secure.</p>
+            <div>
+                <h1>Tachy</h1>
+                <p class="tagline">Fast. Simple. Secure.</p>
+            </div>
+            <button class="clear-chat" id="clearChat" type="button">Clear chat</button>
         </header>
 
         <main class="chat-container">
-            <div class="messages">
-
-                <div class="message received">
-                    <p>Hello! Welcome to Tachy 👋</p>
-                </div>
-
-                <div class="message sent">
-                    <p>Hi! This UI looks clean.</p>
-                </div>
-
-                <div class="message received">
-                    <p>We will improve it step by step.</p>
-                </div>
-
+            <div class="messages" role="log" aria-live="polite" aria-relevant="additions text">
+                <p class="empty-state" id="emptyState">Start a conversation. Your messages stay in this browser.</p>
             </div>
-
+            <p class="chat-status" id="chatStatus" role="status" aria-live="polite">Messages are saved in this browser.</p>
 
             <form class="message-input" id="messageForm">
                 <input type="text" id="messageInput" placeholder="Type your message..." aria-label="Type your message" autocomplete="off" />
